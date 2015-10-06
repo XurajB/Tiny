@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn="@layout/activity_login">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        style="@style/AuthBackgroundImage"
+        android:contentDescription="@string/imageview_content_description" />
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/app_name"
+        style="@style/AuthTitle" />
+
+    <TextView
+        android:text="@string/subtitle"
+        android:id="@+id/subtitle"
+        android:layout_below="@+id/title"
+        style="@style/AuthTitle.AuthSubtitle" />
+</merge>

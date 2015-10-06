@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AuthBackground">
+
+    <include layout="@layout/auth_common" />
+
+    <LinearLayout
+        android:id="@+id/login_buttons_layout"
+        android:layout_below="@+id/subtitle"
+        style="@style/AuthFieldsContainer">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username_hint"
+            android:inputType="textNoSuggestions"
+            android:textColorHint="@color/light_grey"
+            android:textSize="17sp"
+            android:id="@+id/userNameField"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="17sp"
+            android:textColorHint="@color/light_grey"
+            android:ems="10"
+            android:hint="@string/password_hint"
+            android:id="@+id/passwordField"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btn_label"
+        android:id="@+id/login_btn"
+        android:layout_below="@+id/login_buttons_layout"
+        android:textSize="13sp"
+        android:textColor="@color/text_dark_purple"
+        android:background="@drawable/button_custom"
+        android:layout_alignLeft="@+id/login_buttons_layout"
+        android:layout_alignStart="@+id/login_buttons_layout"
+        android:layout_alignRight="@+id/login_buttons_layout"
+        android:layout_alignEnd="@+id/login_buttons_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:text="@string/signup_lbl"
+        android:id="@+id/signup_text"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/login_btn"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

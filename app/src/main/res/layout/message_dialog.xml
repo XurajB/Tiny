@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textSize="17sp"
+        android:textColorHint="@color/light_grey"
+        android:ems="10"
+        android:hint="@string/message_hint"
+        android:id="@+id/messageArea"
+        android:lines="3"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_recipients"
+        android:id="@+id/send_message_btn"
+        android:layout_below="@+id/login_buttons_layout"
+        android:textSize="13sp"
+        android:textColor="@color/text_dark_purple"
+        android:background="@drawable/button_custom"
+        android:layout_alignLeft="@+id/login_buttons_layout"
+        android:layout_alignStart="@+id/login_buttons_layout"
+        android:layout_alignRight="@+id/login_buttons_layout"
+        android:layout_alignEnd="@+id/login_buttons_layout" />
+
+</LinearLayout>

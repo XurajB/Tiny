@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Tiny</string>
+
+    <string name="title_section1">Inbox</string>
+    <string name="title_section2">Friends</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_camera">Camera</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_edit_friends">Edit Friends</string>
+    <string name="action_send">Send</string>
+
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_btn_label">LOGIN</string>
+    <string name="signup_lbl">Don\'t have a login? Sign Up</string>
+    <string name="email_hint">Email</string>
+    <string name="sign_up_text">SIGN UP</string>
+    <string name="sign_up_cancel_text">CANCEL</string>
+    <string name="login_screen_label">Login To Tiny</string>
+    <string name="signup_screen_label">Sign Up For Tiny</string>
+    <string name="edit_frields_screen_label">Edit Friends</string>
+    <string name="signup_error_message">Please enter all required fields</string>
+    <string name="signup_error_title">Oops!!</string>
+    <string name="login_screen_error">Please enter username and password</string>
+    <string name="empty_inbox_message">No new messages</string>
+    <string name="empty_friends_label">No Friends</string>
+    <string name="camera_choice_dialog_title">Select Action</string>
+
+    <string name="error_external_storage">There was a problem accessing your device\'s storage</string>
+    <string name="general_error">Sorry there was an error!!</string>
+    <string name="video_file_size_warning">10 seconds video only.. Please!!</string>
+    <string name="error_opening_file">There was a problem with the selected file..</string>
+    <string name="file_size_too_large">The selected file is too large.. select a new one</string>
+
+    <string-array name="camera_choice">
+        <item>Take Picture</item>
+        <item>Take Video</item>
+        <item>Pick Photo</item>
+        <item>Pick Video</item>
+    </string-array>
+    <string name="title_activity_recipients">Choose Recipients</string>
+    <string name="error_selecting_file">There was an error with the file selected..</string>
+    <string name="error_selecting_file_title">Soooory!!</string>
+    <string name="message_sent_success">Message Sent</string>
+    <string name="error_sending_message">There was an error sending your message.. duh!!!</string>
+    <string name="title_activity_view_image">Tiny</string>
+    <string name="subtitle">Tiny Messaging</string>
+    <string name="imageview_content_description">Tiny Background</string>
+    <string name="push_message">New Tiny message from %s</string>
+    <string name="action_message">Message</string>
+    <string name="choose_recipients">Choose Recipients</string>
+    <string name="message_hint">message...</string>
+</resources>

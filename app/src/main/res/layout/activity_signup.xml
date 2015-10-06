@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AuthBackground" >
+
+    <include layout="@layout/auth_common" />
+
+    <LinearLayout
+        android:id="@+id/signup_buttons_layout"
+        android:layout_below="@+id/subtitle"
+        style="@style/AuthFieldsContainer">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/light_grey"
+            android:ems="10"
+            android:id="@+id/signup_email_textview"
+            android:hint="@string/email_hint"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/light_grey"
+            android:id="@+id/signup_username_textview"
+            android:hint="@string/username_hint"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup_password_textview"
+            android:textColorHint="@color/light_grey"
+            android:inputType="textPassword"
+            android:hint="@string/password_hint"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_divider"
+        android:layout_below="@+id/signup_buttons_layout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/button_divider" />
+
+    <Button
+        android:text="@string/sign_up_text"
+        android:id="@+id/signup_signup_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/text_dark_purple"
+        android:background="@drawable/button_custom"
+        android:layout_below="@+id/signup_buttons_layout"
+        android:layout_alignLeft="@+id/signup_buttons_layout"
+        android:layout_alignStart="@+id/signup_buttons_layout"
+        android:layout_toLeftOf="@+id/button_divider"
+        android:layout_toStartOf="@+id/button_divider" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_cancel_text"
+        android:id="@+id/cancel_btn"
+        android:textSize="13sp"
+        android:textColor="@color/text_dark_purple"
+        android:background="@drawable/button_custom"
+        android:layout_alignTop="@+id/button_divider"
+        android:layout_toRightOf="@+id/button_divider"
+        android:layout_alignRight="@+id/signup_buttons_layout"
+        android:layout_alignEnd="@+id/signup_buttons_layout" />
+
+</RelativeLayout>

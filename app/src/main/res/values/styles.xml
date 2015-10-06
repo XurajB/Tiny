@@ -1,0 +1,152 @@
+<resources>
+
+    <style name="Theme.Tiny" parent="@style/Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">@drawable/selectable_background_tiny</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Tiny</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Tiny</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Tiny</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Tiny</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Tiny</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_tiny</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_tiny</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Tiny</item>
+        <item name="android:editTextStyle">@style/EditTextAppTheme</item>
+        <item name="android:actionOverflowButtonStyle">@style/Theme.Tiny.Overflow</item>
+        <item name="android:listViewStyle">@style/Theme.Tiny.LightPurpleBackground</item>
+        <item name="android:gridViewStyle">@style/Theme.Tiny.LightPurpleBackground.GridView</item>
+
+    </style>
+
+    <style name="Theme.Tiny.LightPurpleBackground">
+        <item name="android:background">@color/light_purple_background</item>
+        <item name="android:divider">@null</item>
+    </style>
+
+    <style name="Theme.Tiny.LightPurpleBackground.GridView">
+        <item name="android:padding">@dimen/user_grid_spacing</item>
+    </style>
+
+    <style name="Theme.Tiny.Overflow" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_overflow</item>
+    </style>
+
+    <style name="ActionBar.Solid.Tiny" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@drawable/ab_solid_tiny</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_tiny</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_tiny</item>
+        <item name="progressBarStyle">@style/ProgressBar.Tiny</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Solid.Tiny.TitleTextStyle</item>
+    </style>
+
+    <style name="ActionBar.Solid.Tiny.TitleTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/text_dark_purple</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Tiny" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="background">@drawable/ab_transparent_tiny</item>
+        <item name="progressBarStyle">@style/ProgressBar.Tiny</item>
+    </style>
+
+    <style name="PopupMenu.Tiny" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_tiny</item>
+    </style>
+
+    <style name="DropDownListView.Tiny" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_tiny</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Tiny" parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_tiny</item>
+    </style>
+
+    <style name="DropDownNav.Tiny" parent="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_tiny</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_tiny</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_tiny</item>
+    </style>
+
+    <style name="ProgressBar.Tiny" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_tiny</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Tiny" parent="@style/Widget.AppCompat.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_tiny</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Tiny.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.Tiny</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Tiny</item>
+    </style>
+
+    <style name="EditTextAppTheme" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/apptheme_edit_text_holo_light</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="ButtonAppTheme" parent="android:Widget.Button">
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="AuthBackground">
+        <item name="android:background">@android:color/holo_purple</item>
+    </style>
+
+    <style name="AuthBackgroundImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:alpha">0.85</item>
+        <item name="android:src">@drawable/background</item>
+    </style>
+
+    <style name="AuthTitle" parent="android:Widget.TextView">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+
+    </style>
+
+    <style name="AuthTitle.AuthSubtitle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_alignParentTop">false</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+    <style name="AuthFieldsContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_marginTop">@dimen/login_vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/login_vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/login_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/login_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/login_horizontal_padding</item>
+        <item name="android:paddingTop">@dimen/login_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/login_vertical_padding</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="GridImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+</resources>
