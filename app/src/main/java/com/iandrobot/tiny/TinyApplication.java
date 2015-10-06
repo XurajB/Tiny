@@ -18,7 +18,7 @@ public class TinyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         Parse.enableLocalDatastore(this);
-        Parse.initialize(this, "EuOvpWoUMsIDzziDOI0ywfZAIAocApKlqb5Q5Abc", "ID4lQ8haJpuNz5v8jdHkeK9KrFK5GJOYB2piottL");
+        Parse.initialize(this, "getyourown", "getyourown");
         ParseInstallation.getCurrentInstallation().saveInBackground();
     }
 
